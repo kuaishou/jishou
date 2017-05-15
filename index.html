@@ -4,133 +4,260 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="renderer" content="webkit">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   <title> 吉首市旅游官网 </title>
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
   <link rel="stylesheet" href="css/main.css">
-  <!--[if lt IE 9]>
+    <!--[if lt IE 9]>
     <script src="lib/html5shiv/html5shiv.min.js"></script>
     <script src="lib/respond/respond.min.js"></script>
   <![endif]-->
+
+    <style>
+
+      #header{
+          width: 1900px;
+          height: 100px;
+
+      }
+      #header >  .container{
+          position: relative;
+      }
+      #header >  .container >.logo{
+          position: absolute;
+          top: 7px;
+          left: 126px;
+          z-index: 1000;
+      }
+      #header >  .container > .nav-tabs {
+          height: 60px;
+          width: 100%;
+          padding-left: 340px;
+          margin-top: 40px;
+          border-bottom: none;
+      }
+      #header >  .container > .nav-tabs span{
+          display:block;
+          float: left;
+          height: 60px;
+          width: 120px;
+          margin-bottom: 0;
+          margin-left: 10px;
+          line-height: 60px;
+          font-size: 16px;
+          color: #333;
+          text-align: center;
+          cursor: pointer;
+      }
+      #header >  .container > .nav-tabs .bom{
+          border-bottom: 3px solid black;
+      }
+
+      #header >  .container > .tab-content div{
+          padding-top: 30px;
+          position: absolute;
+          top: 94px;
+          width: 1026px;
+          background-color:  pink;
+          opacity: 0.6;
+          z-index: 1111;
+          margin-left: 204px;
+          display: none;
+
+      }
+      #header >  .container > .tab-content .dis-black{
+          display: block;
+      }
+      #header >  .container > .tab-content div ul {
+          padding-left: 100px;
+          float: left;
+      }
+      #header >  .container > .tab-content div ul li {
+          list-style: none;
+          padding-top: 8px;
+          font-size: 20px;
+          color:  #000000;
+      }
+    </style>
 </head>
 
 <body>
 
-
 <header id="header">
- <nav class="navbar navbar-itcast navbar-static-top" data-spy="affix" data-offset-top="260" data-offset-bottom="200">
-   <div class="container">
+ <nav class="container" id="nav">
   
-    <div class="logo"><img src="img/raw_1493013183_03.png" alt=""/></div>
-    <div class="ul-wapper">
-      <ul class="nav nav-tabs" role="tablist">
-        <li role="presentation" class="active"><a href="#category_01" aria-controls="category_01" role="tab" data-toggle="tab" aria-expanded="true">走进吉首</a></li>
-        <li role="presentation"><a href="#category_02" aria-controls="category_02" role="tab" data-toggle="tab" aria-expanded="false">畅玩吉首</a></li>
-        <li role="presentation"><a href="#category_03" aria-controls="category_03" role="tab" data-toggle="tab" aria-expanded="false">旅游服务</a></li>
-        <li role="presentation"><a href="#category_04" aria-controls="category_04" role="tab" data-toggle="tab" aria-expanded="false">吉首攻略</a></li>
-        <li role="presentation"><a href="#category_05" aria-controls="category_05" role="tab" data-toggle="tab" aria-expanded="false"  >在线旅游</a></li>
-       
-      </ul>
-       <div class="dropdown">
-  <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Dropdown trigger
-    <span class="caret"></span>
-  </button>
-  <ul class="dropdown-menu" aria-labelledby="dLabel">
-    ...ssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaac
-  </ul>
-</div>
-    </div>
-<!--     所有的选项卡内容 -->
-    <div class="tab-content">
-      <div role="tabpanel" class="tab-pane fade in active" id="category_01">
-        <div class="container">
-           <ul>
-              <li>美食</li>
-              <li>美食</li>
-              <li>美食</li>
-              <li>美食</li>
-           </ul>
-           <ul>
-              <li>美食</li>
-              <li>美食</li>
-              <li>美食</li>
-              <li>美食</li>
-           </ul>
-           <ul>
-              <li>美食</li>
-              <li>美食</li>
-              <li>美食</li>
-              <li>美食</li>
-           </ul>
-        </div>
-      </div>
-      <div role="tabpanel" class="tab-pane fade" id="category_02"><div class="container">
-           <ul>
-              <li>美食</li>
-              <li>美食</li>
-              <li>美食</li>
-              <li>美食</li>
-              <li>美食</li>
-              <li>美食</li>
-              <li>美食</li>
-              <li>美食</li>
-           </ul>
-        </div></div>
-      <div role="tabpanel" class="tab-pane fade" id="category_03"><div class="container">
-           <ul>
-              <li>美食</li>
-              <li>美食</li>
-              <li>美食</li>
-              <li>美食</li>
-              <li>美食</li>
-              <li>美食</li>
-              <li>美食</li>
-              <li>美食</li>
-           </ul>
-        </div></div>
-      <div role="tabpanel" class="tab-pane fade" id="category_04"><div class="container">
-           <ul>
-              <li>美食</li>
-              <li>美食</li>
-              <li>美食</li>
-              <li>美食</li>
-              <li>美食</li>
-              <li>美食</li>
-              <li>美食</li>
-              <li>美食</li>
-           </ul>
-        </div></div>
-      <div role="tabpanel" class="tab-pane fade" id="category_05"><div class="container">
-           <ul>
-              <li>美食</li>
-              <li>美食</li>
-              <li>美食</li>
-              <li>美食</li>
-              <li>美食</li>
-              <li>美食</li>
-              <li>美食</li>
-              <li>美食</li>
-           </ul>
-        </div></div>
-      <div role="tabpanel" class="tab-pane fade" id="category_06"><div class="container">
-           <ul>
-              <li>美食</li>
-              <li>美食</li>
-              <li>美食</li>
-              <li>美食</li>
-              <li>美食</li>
-              <li>美食</li>
-              <li>美食</li>
-              <li>美食</li>
-           </ul>
-        </div></div>
-    </div>
-  </div>
-  </nav>
-</header>
+           <div class="logo"><img src="img/raw_1493013183_03.png" alt=""/></div>
 
+           <div class="nav-tabs">
+               <span>走进吉首</span>
+               <span>畅玩吉首</span>
+               <span>旅游服务</span>
+               <span>吉首攻略</span>
+               <span>在线旅游</span>
+               <span><i>中文</i><i>English</i></span>
+           </div>
+     <div class="tab-content" id="boox">
+         <div >
+             <ul>
+                 <li>美食</li>
+                 <li>美食</li>
+                 <li>美食</li>
+                 <li>美食</li>
+             </ul>
+             <ul>
+                 <li>美食</li>
+                 <li>美食</li>
+                 <li>美食</li>
+                 <li>美食</li>
+             </ul>
+             <ul>
+                 <li>美食</li>
+                 <li>美食</li>
+                 <li>美食</li>
+                 <li>美食</li>
+             </ul>
+         </div>
+         <div><ul>
+             <li>美食</li>
+             <li>美食</li>
+             <li>美食</li>
+             <li>美食</li>
+         </ul>
+             <ul>
+                 <li>美食</li>
+                 <li>美食</li>
+                 <li>美食</li>
+                 <li>美食</li>
+             </ul></div>
+         <div><ul>
+             <li>高山</li>
+             <li>高山</li>
+             <li>高山</li>
+             <li>高山</li>
+         </ul>
+             <ul>
+                 <li>美食</li>
+                 <li>美食</li>
+                 <li>美食</li>
+                 <li>美食</li>
+             </ul>
+             <ul>
+                 <li>美食</li>
+                 <li>美食</li>
+                 <li>美食</li>
+                 <li>美食</li>
+             </ul></div>
+         <div><ul>
+             <li>美食</li>
+             <li>美食</li>
+             <li>美食</li>
+             <li>美食</li>
+         </ul>
+             <ul>
+                 <li>流水</li>
+                 <li>流水</li>
+                 <li>流水</li>
+                 <li>流水</li>
+             </ul>
+             <ul>
+                 <li>美食</li>
+                 <li>美食</li>
+                 <li>美食</li>
+                 <li>美食</li>
+             </ul></div>
+         <div><ul>
+             <li>美食</li>
+             <li>美食</li>
+             <li>美食</li>
+             <li>美食</li>
+         </ul>
+             <ul>
+                 <li>美食</li>
+                 <li>美食</li>
+                 <li>美食</li>
+                 <li>美食</li>
+             </ul>
+             <ul>
+                 <li>美食</li>
+                 <li>美食</li>
+                 <li>美食</li>
+                 <li>美食</li>
+             </ul></div>
+         <div><ul>
+             <li>美食</li>
+             <li>美食</li>
+             <li>美食</li>
+             <li>美食</li>
+         </ul>
+             <ul>
+                 <li>美食</li>
+                 <li>美食</li>
+                 <li>美食</li>
+                 <li>美食</li>
+             </ul>
+             <ul>
+                 <li>美食</li>
+                 <li>美食</li>
+                 <li>美食</li>
+                 <li>美食</li>
+             </ul></div>
+         <div><ul>
+             <li>美食</li>
+             <li>美食</li>
+             <li>美食</li>
+             <li>美食</li>
+         </ul>
+             <ul>
+                 <li>美食</li>
+                 <li>美食</li>
+                 <li>美食</li>
+                 <li>美食</li>
+             </ul>
+             <ul>
+                 <li>美食</li>
+                 <li>美食</li>
+                 <li>美食</li>
+                 <li>美食</li>
+             </ul></div>
+     </div>
+ </nav>
+    <script>
+        function fun(obj,a) {
+
+            var tegle = document.getElementById(obj);
+            var box = document.getElementById(a);
+            var spns = tegle.getElementsByTagName("span");
+            var lis = box.getElementsByTagName("div");
+            for (i = 0; i < spns.length; i++) {
+                spns[i].index = i;
+                spns[i].onmouseover = function () {
+                    for (i = 0; i < spns.length; i++) {
+                        spns[i].className = "";
+                        lis[i].className = "";
+                    }
+                    ;
+                    this.className = "bom";
+                    console.log(this.index);
+                    lis[this.index].className = "dis-black";
+                };
+                lis[i].onmouseover = function () {
+                    for (i = 0; i < lis.length; i++) {
+                        lis[i].className = "";
+                    };
+                    this.className = "dis-black";
+                }
+                lis[i].onmouseout = function () {
+                    for (i = 0; i < lis.length; i++) {
+                         lis[i].className = "";
+                    }
+                }
+            }
+        }
+        fun("nav","boox");
+    </script>
+</header>
 <!--  /头部区域 -->
  <!-- 广告轮播 -->
   <section id="main_ad" class="carousel slide" data-ride="carousel">
@@ -162,7 +289,17 @@
 <!-- 吉首新闻 -->
  <section id="jsxw">
     <div class="container">
-      <p class="pull-left"><i class="icon-uniE906"></i>新闻：吉首，湖南省县级市，湘西土家族典型亚热带 <span>2017-4-18</span><a href="#">更多</a></p>
+      <div class="box">
+        <div class="box-news"  id="_news">
+         <ul class="ull" id="ull">
+           <li>新闻：大吉首，湖南省县级市，湘西土家族典型亚热带</li>
+           <li>新闻：爱吉首，湖南省县级市，湘西土家族典型</li>
+           <li>新闻：美吉首，湖南省县级市，湘西土家族典型亚热带</li>
+           <li>新闻：丽吉首，湖南省县级市，刀山火海</li>
+         </ul> 
+        </div>
+      <span>2017-4-18</span>
+      <a href="#">更多</a></div>
     </div>
   </section>
   <!-- /吉首新闻 -->
@@ -334,5 +471,15 @@
  <script src="lib/bootstrap/js/bootstrap.js"></script>
  <script src="js/main.js"></script>
  </body>
+ <script>
+
+      var box =document.getElementById("box_news");
+      var ul =document.getElementById("ull");
+      var i=0;
+      setInterval(function () {
+        ul.style.top=-30*i+"px";
+        i>2 ? i=0 : i++;
+      },1000)
+ </script>
  
  </html>
