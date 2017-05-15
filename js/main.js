@@ -2,8 +2,8 @@
  * 自己的JS脚步
  * @Author: iceStone
  * @Date:   2015-12-12 10:59:26
- * @Last Modified by:   iceStone
- * @Last Modified time: 2015-12-15 16:23:12
+ * @Last Modified by:   fw
+ * @Last Modified time: 2017-05-08 16:48:16
  */
 
 'use strict';
@@ -14,7 +14,7 @@ $(function() {
    * 根据屏幕宽度的变化决定轮播图片应该展示什么
    * @return {[type]} [description]
    */
-  function resize() {
+ function resize() {
     // 获取屏幕宽度
     var windowWidth = $(window).width();
     // 判断屏幕属于大还是小
@@ -25,8 +25,7 @@ $(function() {
       // 因为拿到是DOM对象 需要转换
       var $item = $(item);
       // var imgSrc = $item.data(isSmallScreen ? 'image-xs' : 'image-lg');
-      var imgSrc =
-        isSmallScreen ? $item.data('image-xs') : $item.data('image-lg');
+      var imgSrc = isSmallScreen ? $item.data('image-xs') : $item.data('image-lg');
 
       // 设置背景图片
       $item.css('backgroundImage', 'url("' + imgSrc + '")');

@@ -3,7 +3,7 @@
 * @Author: iceStone
 * @Date:   2015-12-12 10:56:34
 * @Last Modified by:   fw
-* @Last Modified time: 2017-05-05 10:22:39
+* @Last Modified time: 2017-05-08 17:43:52
 */
 
 
@@ -110,65 +110,68 @@ body {
 
 
 /* 头部区域 */
-.tab-content .tab-pane .container{
+#header{
+    width: 1900px;
+    height: 100px;
+
+}
+#header >  .container{
+    position: relative;
+}
+#header >  .container >.logo{
     position: absolute;
+    top: 7px;
+    left: 126px;
+    z-index: 1000;
+}
+#header >  .container > .nav-tabs {
+    height: 60px;
+    width: 100%;
+    padding-left: 340px;
+    margin-top: 40px;
+    border-bottom: none;
+}
+#header >  .container > .nav-tabs span{
+    display:block;
+    float: left;
+    height: 60px;
+    width: 120px;
+    margin-bottom: 0;
+    margin-left: 10px;
+    line-height: 60px;
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    cursor: pointer;
+}
+#header >  .container > .nav-tabs .bom{
+    border-bottom: 3px solid black;
+}
+
+#header >  .container > .tab-content div{
+    padding-top: 30px;
+    position: absolute;
+    top: 94px;
     width: 1026px;
-    background-color:  #ffffff;
+    background-color:  pink;
     opacity: 0.6;
     z-index: 1111;
     margin-left: 204px;
+    display: none;
+
 }
-
-
-.tab-content .tab-pane .container ul {
+#header >  .container > .tab-content .dis-black{
+    display: block;
+}
+#header >  .container > .tab-content div ul {
     padding-left: 100px;
     float: left;
 }
-
-.tab-content .tab-pane .container ul li{
+#header >  .container > .tab-content div ul li {
     list-style: none;
     padding-top: 8px;
     font-size: 20px;
     color:  #000000;
-}
-
-#header .logo{
-  position: relative;
-}
-
-#header > .navbar> .container > .logo > img{
-  position: absolute;
-  top: 7px;
-  left: 109px;
-  z-index: 1000;
-}
-
-#header {
-  height: 100px;
-}
-
-#header > .navbar> .container > .ul-wapper > .nav-tabs {
-  padding-left: 340px;
-  margin-top: 55px;
-  border-bottom: 0;
-}
-
-
-#header > .navbar> .container > .ul-wapper > .nav-tabs > li > a {
-  font-size: 16px;
-  color: #333;
-}
-
-#header > .navbar> .container > .ul-wapper > .nav-tabs > li > a:hover {
-  border-color: transparent;
-  background-color: transparent;
-  color: #000;
-}
-
-#header > .navbar> .container > .ul-wapper > .nav-tabs > li.active > a {
-  background-color: transparent;
-  border: 0;
-  border-bottom: 4px solid #e92322;
 }
 
 
@@ -213,6 +216,7 @@ body {
 
 /* 吉首新闻*/
 
+
 #jsxw {
 
 }
@@ -222,15 +226,36 @@ body {
     padding-left:100px ;
 }
 
-#jsxw> .container > p {
+#jsxw> .container > .box {
   font-size: 14px;
   margin-bottom: 0;
 }
+#jsxw > .container > .box > .box-news{
+            float: left;
+            height: 30px;
+            width: 570px;
+            position: relative;
+            overflow: hidden;
+}
+#jsxw > .container > .box > .box-news >  .ull{
+            height: 120px;
+            width: 570px;
+            position: absolute;
+            top: 0;
+            left: 0;
+}
+#jsxw > .container > .box >.box-news> .ull> li{
+            list-style: none;
+            height: 30px;
+            line-height: 30px;
+            width: 570px;
+            margin-left: 30px;
+}
 
-#jsxw > .container > .pull-left > span{
+#jsxw > .container > .box > span{
    margin-left: 40px;
 }
-#jsxw > .container > .pull-left > a {
+#jsxw > .container > .box > a {
   display:inline-block;
   height: 20px;
   width: 70px;
@@ -241,11 +266,9 @@ body {
   margin-left: 60px;
   border-radius: 10px;
 }
-
-#jsxw > .container > .pull-left > a {
+#jsxw > .container > .box > a {
   border-bottom: 1px dashed #e92322;
 }
-
 #jsxw> .container > .pull-left > a:hover {
   text-decoration: none;
 }
